@@ -1,0 +1,125 @@
+.mental{
+    background-color: black;
+    padding: 96px 0;
+}
+.work{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 80px;
+}
+.m_left img:first-child{
+    display: none;
+}
+.m_r_tepa{
+    h2{
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        letter-spacing: -0.1px;
+        margin-bottom: 16px;
+    }
+    p{
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        font-size: $font_size_primary;
+        max-width: 495px;
+        margin-bottom: 16px;
+    }
+}
+.m_right{
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-left: 16px;
+    }
+    li{
+        p{
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            letter-spacing: 0.1px;
+            font-size: $font_size_primary;
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    .m_left img:first-child{
+        display: inline-block;
+    }
+    .m_left img:last-child{
+        display: none;
+    }
+    .mental{
+        padding: 0;
+        padding-top: 32px;
+        padding-bottom: 64px;
+    }
+    .work{
+        flex-direction: column;
+        gap: 64px;
+    }
+    .m_right{
+        display: flex;
+        gap: 129px;
+    }
+    .m_r_tepa{
+        h2{
+            max-width: 370px;
+        }
+        p{
+            max-width: 410px;
+            margin: 0 auto;
+        }
+    }
+
+    .m_right li p:first-child{
+        display: none;
+    }
+}
+@media screen and (max-width:942px){
+    .mental{
+        padding: 24px 0;
+    }
+    .work{
+        gap: 29px;
+        align-items: center;
+    }
+    .m_right{
+        gap: 29px;
+        flex-direction: column;
+        align-items: center;
+        ul{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .m_r_tepa{
+        text-align: center;
+        h2{
+            max-width: none;
+        }
+        p{
+            max-width: none;
+        }
+    }
+}
+
+@media screen and (max-width:640px){
+    .work{
+        gap: 14px;
+    }
+    .m_right{
+        gap: 14px;
+        li{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    .m_r_tepa{
+        gap: 14px;
+    }
+}

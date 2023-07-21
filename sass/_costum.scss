@@ -1,0 +1,91 @@
+.costum{
+    padding: 96px 0;
+}
+.c_cards{
+    display: flex;
+    gap: 30px;
+}
+.c_card{
+    padding: 24px;
+    display: grid;
+    gap: 56px;
+    border-radius: 8px;
+    background: #F3F3F3;
+}
+.c_tepa{
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
+.c_past{
+    display: grid;
+    align-items: end;
+    gap: 16px;
+    p{
+        font-size: $font_size_primary;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.1px;
+    }
+}
+.c_tepa{
+    span{
+        display: none;
+    }
+}
+.dumaloq3{
+    display: none;
+}
+@media screen and (max-width:1024px){
+    .costum{
+        padding: 48px 0;
+        .container{
+            max-width: 100%;
+        }
+    }
+    .c_tepa{
+        span{
+            display: flex;
+        }
+    }
+    .xaridor{
+        display: grid;
+        gap: 65px;
+    }
+    .dumaloq3{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:942px){
+    .costum{
+        .container{
+            max-width: 95%;
+        }
+    }
+    .xaridor{
+        gap: 30px;
+    }
+    .c_cards .c_card:last-child{
+        display: none;
+    }
+    .costum{
+        padding: 30px 0;
+    }
+    .c_cards{
+        gap: 16px;
+    }
+}
+@media screen and (max-width:640px){
+    .costum{
+        .container{
+            max-width: 91%;
+        }
+    }
+    .c_cards .c_card:nth-child(2){
+        display: none;
+    }
+}

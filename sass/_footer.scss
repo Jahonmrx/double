@@ -1,0 +1,120 @@
+footer{
+    background-color: black;
+    color: white;
+    padding: 96px 0;
+}
+.foot{
+    a{
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    h2{
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        font-size: $font_size_primary;
+        margin-bottom: 16px;
+    }
+}
+
+.ustunlar{
+    display: flex;
+    justify-content: space-between;
+    ul{
+        list-style: none;
+        display: grid;
+        gap: 8px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        opacity: 0.4000000059604645;
+        max-width: 215px;
+    }
+}
+.ustunlar ul:last-child{
+    h2{
+        margin-bottom: 20px;
+    }
+}
+form{
+    border-radius: 40px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    max-width: 228px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    input{
+        max-width: 150px;
+        margin: 0 auto;
+        padding: 3px 0;
+        font-size: $font_size_primary;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: white;
+    }
+    img{
+        cursor: pointer;
+    }
+}
+.f_tepa{
+    display: none;
+}
+.f_past{
+    display: none;
+    h2{
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        opacity: 0.4000000059604645;
+        max-width: 215px;
+    }
+}
+@media screen and (max-width:1024px){
+    .ustunlar ul:first-child{
+        display: none;
+    }
+    .f_tepa{
+        display: flex;
+        margin-bottom: 48px;
+    }
+}
+@media screen and (max-width:640px){
+    footer{
+        padding: 50px 0;
+    }
+    .foot{
+        text-align: center;
+    }
+    .ustunlar ul:last-child{
+        display: none;
+    }
+    .ustunlar{
+        margin-bottom: 20px;
+        align-items: start;
+    }
+    .f_past{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            max-width: none;
+        }
+    }
+    .f_tepa{
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        input{
+            max-width: 100%;
+        }
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,144 @@
+.hero{
+    padding: 64px 0;
+    .container{
+        max-width: 1212px;
+    }
+}
+.geroy{
+    display: flex;
+    gap: 68px;
+    justify-content: space-between;
+    align-items: center;
+}
+.h_left{
+    h2{
+        font-size: 50px;
+        font-weight: 800;
+        margin-bottom: 24px;
+        max-width: 380px;
+    }
+    p{
+        font-size: 24px;
+        font-weight: 300;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        max-width: 525px;
+    }
+}
+.h_l_past{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    button{
+        font-weight: 500;
+        font-size: $font_size_primary;
+        padding: 13px 52px;
+        border-radius: 30px;
+        background: #FFCF23;
+    }
+    p{
+        font-weight: 300;
+        font-size: $font_size_primary;
+        margin-bottom: 0;
+        max-width: 275px;
+    }
+}
+.h_l_past p:last-child{
+    display: none;
+}
+.h_right img:last-child{
+    display: none;
+}
+
+@media screen and (max-width:1024px){
+    .h_right img:last-child{
+        display: inline-block;
+    }
+    .h_right img:first-child{
+        display: none;
+    }
+    .h_left{
+        h2{
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+    }
+    .geroy{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .h_l_past p:last-child{
+        display: flex;
+    }
+    .h_l_past p:nth-child(2){
+        display: none;
+    }
+    .h_l_past{
+        p{
+            max-width: none;
+        }
+    }
+}
+@media screen and (max-width:1285px){
+    .hero{
+    .container{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    }
+}
+@media screen and (max-width:1024px){
+    .hero{
+        padding-top: 44px;
+        padding-bottom: 32px;
+    }
+}
+@media screen and (max-width:942px){
+    .hero{
+        padding-top: 41px;
+        padding-bottom: 0;
+    }
+    .h_right{
+        img{
+            margin: 0 auto;
+        }
+    }
+    .geroy{
+        gap: 36px;
+    }
+    .h_left{
+        h2{
+            font-size: 40px;
+        }
+        p{
+            max-width: none;
+            font-size: 18px;
+        }
+    }
+    .h_right img:last-child{
+        display: none;
+    }
+    .h_right img:first-child{
+        display: inline-block;
+    }
+}
+@media screen and (max-width:640px){
+    .hero{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .h_left{
+        p{
+            margin-bottom: 25px;
+        }
+    }
+    .h_l_past{
+        flex-direction: column;
+        p{
+            font-weight: 600;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+    }
+}
